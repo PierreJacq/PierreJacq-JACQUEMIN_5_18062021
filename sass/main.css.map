@@ -1,0 +1,23 @@
+{
+    "version": 3,
+    "mappings": "AKAA,AAAA,IAAI,CAAC;EACD,OAAO,EAAC,IAAI;CACf",
+    "sources": [
+        "main.scss",
+        "utils/_variables.scss",
+        "utils/_functions.scss",
+        "utils/_mixins.scss",
+        "utils/_extensions.scss",
+        "base/_base.scss",
+        "base/_typography.scss",
+        "components/_buttons.scss",
+        "layout/_header.scss",
+        "layout/_nav.scss",
+        "layout/_container.scss",
+        "layout/_form.scss",
+        "pages/_work.scss",
+        "pages/_about.scss",
+        "pages/_project.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
