@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: $color-main;
+    border-top: 1px solid $color-shadow;
+}
+
+footer a {
+    text-decoration: none;
+    color: $color-white;
+    //background-color: $color-main;
+    padding: 20px;
+
+}
