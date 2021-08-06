@@ -1,0 +1,30 @@
+#conteneur--produit{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carte{
+    width: 100%;
+    display: flex;
+    margin: 5px;
+    border: 1px solid $color-shadow;
+    border-radius: 20px;
+    &:hover{
+        transform: scale(1.02);
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+}
+
+.carte__img {
+    width: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.carte__infos{
+    padding: 10px;
+    border-left: 1px solid $color-shadow;
+
+}

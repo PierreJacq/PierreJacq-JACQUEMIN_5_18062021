@@ -23,11 +23,16 @@ body {
   font-size: 1rem;
 }
 
+.infos__titre {
+  color: #0084ff;
+  font-size: 1.5rem;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 60px;
   width: 100%;
   box-shadow: 0px 2px 2px #979797;
 }
@@ -60,8 +65,6 @@ nav a:hover {
 main {
   width: 80%;
   max-width: 1200px;
-  min-height: 600px;
-  border: 1px solid #979797;
   border-bottom: 0px;
 }
 
@@ -77,6 +80,35 @@ footer a {
   text-decoration: none;
   color: #ffffff;
   padding: 20px;
+}
+
+#conteneur--produit {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.carte {
+  width: 100%;
+  display: flex;
+  margin: 5px;
+  border: 1px solid #979797;
+  border-radius: 20px;
+}
+.carte:hover {
+  transform: scale(1.02);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.carte__img {
+  width: 50%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.carte__infos {
+  padding: 10px;
+  border-left: 1px solid #979797;
 }
 
 /*# sourceMappingURL=styles.css.map */

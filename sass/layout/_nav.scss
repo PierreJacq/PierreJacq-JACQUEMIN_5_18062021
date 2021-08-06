@@ -1,0 +1,17 @@
+nav{
+    height : 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding: 20px;
+    height: 100%;
+    text-decoration: none;
+    color: $color-main;
+    &:hover{
+        background-color:$color-main;
+        color: $color-white;
+        transition: 0.4s;
+    }
+}
