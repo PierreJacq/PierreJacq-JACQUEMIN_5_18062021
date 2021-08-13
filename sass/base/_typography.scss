@@ -1,9 +1,15 @@
 * {
     font-family:'Hind', sans-serif;
     font-size: 1rem;
+    color: $color-black;
+    text-decoration: none;
 }
 
 .infos__titre{
     color: $color-main;
     font-size: 1.5rem;
+}
+
+.fas.fa-caret-right, .fas.fa-caret-left{
+    font-size: 2rem;
 }

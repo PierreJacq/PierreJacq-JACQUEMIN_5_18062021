@@ -1,38 +1,39 @@
-// On déclare variables et constantes
+// Fonction appel des nounours
 
 let listeNounours;
+
+async function fetchNounours() {
+    listeNounours = await fetch("http://localhost:3000/api/teddies")
+        .then((res) => res.json());
+}
+
+// Fonction injection HTML dans index.html
+
 let conteneurProduit = document.getElementById("conteneur--produit");
 
-// On récupère la liste 
-
-const fetchNounours = async() => {
-    listeNounours = await fetch("http://localhost:3000/api/teddies")
-    .then((res) => res.json());
-};
-
-// On injecte notre résultat dans le HTML
-
-const showNounours = async() => {
+async function showNounours() {
     await fetchNounours();
+    console.log("1 !")
 
-    conteneurProduit.innerHTML = (
-        listeNounours
-            .map(nounours => (
-                `
-                <div class="carte">
+    let nounoursHTML = "";
+
+    listeNounours.forEach(nounours => (
+        nounoursHTML +=
+        `
+                <a class="carte" href="./produit.html?id=${nounours._id}">
                     <img class="carte__img" src="${nounours.imageUrl}"></img>
                     <div class="carte__infos">
                         <h1 class="infos__titre">${nounours.name}</h1>
                         <p class="infos__prix">${nounours.price}€</p>
                         <p class="infos__description"><strong>Description :</strong> ${nounours.description}</p>             
                     </div>
-                </div>
+                </a>
                 `
-                ))
-                .join('')
-    )
-};
+    ));
 
-// On active notre fonction globale
+    if (conteneurProduit != null) {
+        conteneurProduit.innerHTML = nounoursHTML;
+    }
+}
 
 showNounours();
