@@ -13,7 +13,6 @@ let conteneurProduit = document.getElementById("conteneur--produit");
 
 async function showNounours() {
     await fetchNounours();
-    console.log("1 !")
 
     let nounoursHTML = "";
 

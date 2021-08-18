@@ -141,6 +141,14 @@ footer a {
   border-left: 1px solid #979797;
 }
 
+.produit__color {
+  display: flex;
+  margin: 20px 0;
+}
+.produit__color p {
+  margin-right: 10px;
+}
+
 .produit__panier {
   display: flex;
   justify-content: center;
@@ -155,6 +163,7 @@ footer a {
 .produit__quantités div {
   margin: 5px;
   padding: 4px 12px;
+  border-radius: 5px;
   border: 1px solid #575757;
 }
 

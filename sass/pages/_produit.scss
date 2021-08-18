@@ -23,6 +23,15 @@
     border-left: 1px solid $color-shadow;
 }
 
+.produit__color{
+    display: flex;
+    margin : 20px 0;
+    & p{
+        margin-right: 10px;
+    }
+}
+
+
 .produit__panier{
     display:flex;
     justify-content: center;
@@ -36,6 +45,7 @@
     & div{
         margin: 5px;
         padding: 4px 12px;
+        border-radius: 5px;
         border: 1px solid $color-black;
     }
 }
