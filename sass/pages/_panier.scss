@@ -1,0 +1,61 @@
+#grille__produits{
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grille__conteneurcarte{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    border: 1px solid $color-main;
+    border-radius: 5px;
+    margin:3px;
+    padding: 3px;
+    & img{
+        max-height: 50px;
+    }
+    & i{
+        &:hover{
+            color:$color-main;
+            cursor: pointer;
+        }
+    }
+}
+.grille__nomArticle{
+    color: $color-main;
+}
+
+.conteneur__prix{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    width: 30%;
+}
+
+
+
+#panier__grille--vide{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & i {
+        font-size: 2rem;
+    }
+}
+
+.formulaire__commande{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background-color: $color-shadow;
+    
+    & p{
+        color: $color-white;
+    }
+}
+

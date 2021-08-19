@@ -71,10 +71,17 @@ async function nounoursChoisi(){
                 }
         })
 
+        // Récupération du panier dans le localStorage
+
+        let panierProduits =[];
+
+        if(localStorage.panier != null){
+                panierProduits = JSON.parse(localStorage.getItem("panier"))
+        }
+
         // Ajout des produits au localStorage
 
         let quantiteNounours = 1;
-        let panierProduits =[];
 
         document.getElementById("bouton__panier").addEventListener("click",function(){
                 for(i=0; i<quantiteNounours; i++){

@@ -11,7 +11,7 @@ body {
   background-color: #0084ff;
 }
 
-#blocpage {
+.blocpage {
   background-color: #ffffff;
   width: 100%;
   display: flex;
@@ -172,6 +172,63 @@ footer a {
   padding: 10px;
   border-radius: 10px;
   background-color: #0084ff;
+  color: #ffffff;
+}
+
+#grille__produits {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grille__conteneurcarte {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  border: 1px solid #0084ff;
+  border-radius: 5px;
+  margin: 3px;
+  padding: 3px;
+}
+.grille__conteneurcarte img {
+  max-height: 50px;
+}
+.grille__conteneurcarte i:hover {
+  color: #0084ff;
+  cursor: pointer;
+}
+
+.grille__nomArticle {
+  color: #0084ff;
+}
+
+.conteneur__prix {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  width: 30%;
+}
+
+#panier__grille--vide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#panier__grille--vide i {
+  font-size: 2rem;
+}
+
+.formulaire__commande {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background-color: #979797;
+}
+.formulaire__commande p {
   color: #ffffff;
 }
 
