@@ -35,6 +35,46 @@ body {
   font-size: 2rem;
 }
 
+h1 {
+  font-size: 2rem;
+  margin: 5px;
+  color: #ffffff;
+}
+
+#bouton__panier {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #0084ff;
+  color: #ffffff;
+  position: relative;
+  transition: 0s 1s;
+}
+#bouton__panier:hover {
+  cursor: pointer;
+}
+#bouton__panier:focus:before {
+  position: absolute;
+  content: "Ajouté !";
+  background-color: #00ff9d;
+  padding: 10px;
+  border-radius: 10px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0s;
+}
+
+#validationButton {
+  width: 30%;
+  margin: 10px;
+  background-color: #0084ff;
+  color: #ffffff;
+  border: 1px solid #575757;
+  border-radius: 5px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -73,6 +113,43 @@ main {
   width: 80%;
   max-width: 1200px;
   border-bottom: 0px;
+}
+
+#formulaire__commande {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+}
+#formulaire__commande form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #979797;
+  border-radius: 30px;
+}
+#formulaire__commande fieldset {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+#formulaire__commande label {
+  color: #ffffff;
+  width: 13%;
+  margin: 1%;
+  text-align: center;
+}
+#formulaire__commande input {
+  width: 33%;
+  margin: 1%;
+}
+
+#Erreur {
+  color: red;
+  font-weight: bold;
 }
 
 footer {
@@ -167,14 +244,6 @@ footer a {
   border: 1px solid #575757;
 }
 
-#bouton__panier {
-  margin-left: 10px;
-  padding: 10px;
-  border-radius: 10px;
-  background-color: #0084ff;
-  color: #ffffff;
-}
-
 #grille__produits {
   min-height: 200px;
   display: flex;
@@ -209,6 +278,7 @@ footer a {
   justify-content: space-between;
   margin: 10px;
   width: 30%;
+  border-bottom: 1px solid #0084ff;
 }
 
 #panier__grille--vide {
@@ -219,17 +289,6 @@ footer a {
 }
 #panier__grille--vide i {
   font-size: 2rem;
-}
-
-.formulaire__commande {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 200px;
-  background-color: #979797;
-}
-.formulaire__commande p {
-  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */

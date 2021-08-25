@@ -33,6 +33,7 @@
     justify-content: space-between;
     margin: 10px;
     width: 30%;
+    border-bottom: 1px solid $color-main;
 }
 
 
@@ -44,18 +45,6 @@
     align-items: center;
     & i {
         font-size: 2rem;
-    }
-}
-
-.formulaire__commande{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-    background-color: $color-shadow;
-    
-    & p{
-        color: $color-white;
     }
 }
 

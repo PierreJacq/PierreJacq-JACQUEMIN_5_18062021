@@ -1,0 +1,35 @@
+#bouton__panier{
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: $color-main;
+    color: $color-white;
+    position: relative;
+    transition: 0s 1s;
+    &:hover{
+        cursor: pointer;
+    }
+    &:focus:before{
+        position: absolute;
+        content: "Ajouté !";
+        background-color: $color-green;
+        padding: 10px;
+        border-radius: 10px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transition: 0s;
+
+    }
+}
+
+#validationButton{
+    width: 30%;
+    margin: 10px;
+    background-color: $color-main;
+    color: $color-white;
+    border: 1px solid $color-black;
+    border-radius: 5px;
+    
+}

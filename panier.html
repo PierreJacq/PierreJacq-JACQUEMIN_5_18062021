@@ -28,8 +28,41 @@
                 
             </div>
 
-            <div class="formulaire__commande">
-                <p>C'est ici que je pourrai insérer le formulaire</p>
+            <div id="formulaire__commande">
+                <p id="Erreur"></p>
+
+                <form id="form" action="#" method="POST">
+                    <fieldset>
+                        <label for="firstName">Prénom </label>
+                        <input id="firstName" type="text" required  pattern="[a-zA-Z]+" placeholder="Entrez votre prénom" >
+
+                        <label for="lastName">Nom </label>
+                        <input id="lastName" type="text" required  pattern="[a-zA-Z]+"  placeholder="Entrez votre nom">
+
+                        <label for="address">Adresse </label>
+                        <input id="address" type="text" required  pattern="[1-9a-zA-Z\s]+" placeholder="Entrez votre adresse">
+                        
+                        <label for="city">Ville</label>
+                        <input id="city" type="text" required  pattern="[a-zA-Z]+"  placeholder="Entrez votre ville">
+
+                        <label for="email">Email</label>
+                        <input id="email" type="email" required placeholder="Entrez votre adresse e-mail" >
+
+
+                    </fieldset>
+
+                    <button id="validationButton" type="submit">Commander</button>
+
+                </form>
+
+
+
+
+
+
+
+
+
             </div>
 
         </main>

@@ -29,7 +29,7 @@ async function nounoursChoisi(){
 
                                 <div class="produit__infos">
                                         <h1 class="infos__titre">${ficheproduit.name}</h1>
-                                        <p class="infos__prix">${ficheproduit.price}€</p>
+                                        <p class="infos__prix">${(ficheproduit.price/100).toFixed(2)}€</p>
                                         <p class="infos__description"><strong>Description :</strong> ${ficheproduit.description}</p>             
                                 </div>
 
@@ -87,7 +87,7 @@ async function nounoursChoisi(){
                 for(i=0; i<quantiteNounours; i++){
                         panierProduits.push(ficheproduit);                      
                 }
-                localStorage.setItem("panier", JSON.stringify(panierProduits) )                
+                localStorage.setItem("panier", JSON.stringify(panierProduits))                
         })
 }
 

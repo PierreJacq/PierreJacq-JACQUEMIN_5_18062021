@@ -23,7 +23,7 @@ async function showNounours() {
                     <img class="carte__img" src="${nounours.imageUrl}"></img>
                     <div class="carte__infos">
                         <h1 class="infos__titre">${nounours.name}</h1>
-                        <p class="infos__prix">${nounours.price}€</p>
+                        <p class="infos__prix">${(nounours.price/100).toFixed(2)}€</p>
                         <p class="infos__description"><strong>Description :</strong> ${nounours.description}</p>             
                     </div>
                 </a>

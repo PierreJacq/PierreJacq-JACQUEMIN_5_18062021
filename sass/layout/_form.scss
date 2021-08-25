@@ -1,0 +1,41 @@
+#formulaire__commande{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+    
+    & form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-shadow;
+        border-radius: 30px;
+
+    }
+    & fieldset{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+
+
+    }
+    & label{
+        color: $color-white;
+        width: 13%;
+        margin : 1%;
+        text-align: center;
+
+    }
+    & input{
+        width: 33%;
+        margin : 1%
+    }
+}
+
+#Erreur{
+    color: red;
+    font-weight: bold;
+}
