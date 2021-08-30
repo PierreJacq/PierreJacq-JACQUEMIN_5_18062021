@@ -1,11 +1,11 @@
 // FICHE PRODUIT - fonction d'extraction de l'ID dans l'URL 
 
 async function idExtract(){
-        const urlParams = new URLSearchParams(window.location.search);
-        const identifiant = urlParams.get('id');
-        //console.log(identifiant);
-        return identifiant;
-}
+                const urlParams = new URLSearchParams(window.location.search);
+                const identifiant = urlParams.get('id');
+                return identifiant;
+                console.error("Erreur récupération identifiant search param")
+        }
 
 // FICHE PRODUIT - Query qui retourne le bon produit
 
@@ -13,7 +13,7 @@ async function queryNounours() {
         const idProduit = await idExtract()
         const arrayProduit = await fetch(`http://localhost:3000/api/teddies/${idProduit}`)
         .then((res) => res.json())
-        //console.log(arrayProduit);
+        .catch(console.error("Erreur de requête au back-end"))
         return arrayProduit;
 };
 

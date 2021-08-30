@@ -56,7 +56,7 @@ h1 {
 #bouton__panier:focus:before {
   position: absolute;
   content: "Ajouté !";
-  background-color: #00ff9d;
+  background-color: #00c774;
   padding: 10px;
   border-radius: 10px;
   top: 0;

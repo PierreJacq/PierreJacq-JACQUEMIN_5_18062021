@@ -11,7 +11,7 @@ texteConfirmation =
     `
     <p>Merci <strong>${infosCommande.contact.firstName}</strong> !</p>
     
-    <p>Votre commande d'un montant total de <strong>${(prixFinal/100).toFixed(2)} €</strong>.
+    <p>Votre commande d'un montant total de <strong>${(prixFinal/100).toFixed(2)} €</strong> est bien prise en compte.
     </br>Le numéro de votre commande est le <strong>${infosCommande.orderId}</strong>.</p>
     `;
 

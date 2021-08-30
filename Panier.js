@@ -70,8 +70,10 @@ async function grilleProduits() {
             })
         }
     }
-
-    document.getElementById("validationButton").addEventListener("click", envoi)} // Ajout de l'event listener fonction au bouton
+    
+    // Ajout de l'event listener fonction au bouton
+    document.getElementById("validationButton").addEventListener("click", envoi)
+} 
 
 grilleProduits();
 
@@ -92,7 +94,7 @@ const envoi = (comm) => {
 
     comm.preventDefault(); // Pas d'envoi du formulaire
 
-    monForm = Array.from(document.querySelectorAll("fieldset input")).reduce((acc, input) => ({...acc,[input.id]: input.value}),{}); // on déverse les champs directment dans l'objet (plutôt cool)
+    monForm = Array.from(document.querySelectorAll("fieldset input")).reduce((acc, input) => ({...acc,[input.id]: input.value}),{}); // on déverse les champs directement dans l'objet (plutôt cool)
 
     checkForm(); // On vérifie les données saisies
     checkCompl(); // On vérifie que tous les champs sont remplis
@@ -211,10 +213,14 @@ async function creationCommande(){
             'Content-Type': 'application/json',
         },
         body : JSON.stringify(dataRequete), 
-    }).then((res) => res.json())
-    
-    localStorage.clear();
-    localStorage.setItem("confirmation", JSON.stringify(retourBack));
+    })
+        .then((res) => res.json())
+        .then(localStorage.clear())
+        .catch(console.error("Erreur de requête au back-end"))
+
+        
+        
+    localStorage.setItem("confirmation", JSON.stringify(retourBack))
     localStorage.setItem("prixTotal", JSON.stringify(prixTotal))
 
     // Redirection vers la confirmation
