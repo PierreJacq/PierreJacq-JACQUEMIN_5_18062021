@@ -4,7 +4,6 @@ async function idExtract(){
                 const urlParams = new URLSearchParams(window.location.search);
                 const identifiant = urlParams.get('id');
                 return identifiant;
-                console.error("Erreur récupération identifiant search param")
         }
 
 // FICHE PRODUIT - Query qui retourne le bon produit
