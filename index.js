@@ -4,8 +4,7 @@ let listeNounours;
 
 async function fetchNounours() {
         listeNounours = await fetch("http://localhost:3000/api/teddies")
-            .then((res) => res.json())
-            .catch(console.error("Erreur de requête au back-end"))
+            .then((res) => res.json(),(error) => console.log("Erreur de requête au back-end") )
     }
 
 // Fonction injection HTML dans index.html

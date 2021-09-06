@@ -11,8 +11,7 @@ async function idExtract(){
 async function queryNounours() {
         const idProduit = await idExtract()
         const arrayProduit = await fetch(`http://localhost:3000/api/teddies/${idProduit}`)
-        .then((res) => res.json())
-        .catch(console.error("Erreur de requête au back-end"))
+        .then((res) => res.json(),(error) => console.log("Erreur de requête au back-end") )
         return arrayProduit;
 };
 
